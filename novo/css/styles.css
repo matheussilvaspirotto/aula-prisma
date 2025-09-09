@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box}
+
+  body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-image: url(/dip.webp);
+      background-size: cover;
+  }
+
+  .header {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+  }
+
+  nav {
+      width: 500px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      height: 80px;
+      margin: 20px;
+
+  }
+
+  ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+  }
+
+  .contaneir {
+      display: flex;
+      gap: 60px;
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      img {
+        width: 600px;
+      }
+
+
+  }
