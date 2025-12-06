@@ -1,0 +1,58 @@
+
+CLIQUE AQUI<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botão Interativo</title>
+  <style>
+    /* Estilo do botão */
+    #botao {
+      padding: 20px 40px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+/* Estilo do contador */
+#contador {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+</style>
+</head>
+<body>
+<button id="botao">Clique em mim!</button>
+<div id="contador">Cliques: 0</div>
+<script>
+// Seleciona o botão e o contador
+const botao = document.getElementById('botao');
+const contador = document.getElementById('contador');
+// Variável para contar os cliques
+let cliques = 0;
+
+// Evento para aumentar o botão ao passar o mouse
+botao.addEventListener('mouseover', () => {
+  botao.style.transform = 'scale(1.2)'; // Aumenta o tamanho
+});
+
+// Evento para diminuir o botão ao tirar o mouse
+botao.addEventListener('mouseout', () => {
+  botao.style.transform = 'scale(1)'; // Volta ao tamanho original
+});
+
+// Evento para contar os cliques
+botao.addEventListener('click', () => {
+  cliques++;
+  contador.textContent = `Cliques: ${cliques}`; // Atualiza o contador
+});
+
+</script>
+</body>
+</html>
+
